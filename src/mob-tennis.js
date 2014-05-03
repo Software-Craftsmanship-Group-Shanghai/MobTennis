@@ -1,3 +1,6 @@
-document.getElementById('joseph').onclick=function(){
-    console.log('joseph');
-};
+exports.Match = function() {
+  this.CurrentScore = function() {
+    return 'Love All';
+  }
+}
+
