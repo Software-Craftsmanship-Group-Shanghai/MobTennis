@@ -5,7 +5,8 @@ var Match = function() {
   var scoreMap = {
     '0' : 'Love',
     '1' : 'Fifteen',
-    '2' : 'Thirty'
+    '2' : 'Thirty',
+    '3' : 'Forty'
   };
 
   this.currentScore = function() {

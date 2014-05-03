@@ -34,5 +34,8 @@ describe('mob-tennis', function() {
         setScore(1, 1);
         assert.equal('Fifteen All', m.currentScore());
     });
-
+    it('should display Forty Thirty when 40 : 30', function () {
+        setScore(3, 2);
+        assert.equal('Forty Thirty', m.currentScore());
+    });
 })
