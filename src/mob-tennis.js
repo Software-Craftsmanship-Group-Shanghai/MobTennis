@@ -1,4 +1,4 @@
-exports.Match = function() {
+var Match = function() {
   this.player1score = 0;
 
   this.currentScore = function() {
@@ -11,5 +11,12 @@ exports.Match = function() {
   this.addPlayer1Score = function() {
     this.player1score++;
   }
+};
+
+if(typeof(exports) !== 'undefined') {
+    exports.Match = Match;
 }
+
+
+
 
