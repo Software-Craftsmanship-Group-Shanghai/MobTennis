@@ -14,6 +14,10 @@ describe('mob-tennis', function() {
         m.addPlayer1Score();
         assert.equal('Fifteen Love', m.currentScore());
     });
+    it('should display Love Fifteen when 0 : 15', function () {
+        m.addPlayer2Score();
+        assert.equal('Love Fifteen', m.currentScore());
+    });
     it('should display Fifteen All when 15 : 15', function() {
         m.addPlayer2Score();
         m.addPlayer1Score();

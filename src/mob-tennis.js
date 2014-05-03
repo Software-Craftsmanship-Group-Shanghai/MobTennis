@@ -5,6 +5,7 @@ var Match = function() {
   var scoreMap = {
     '0:0' : 'Love All',
     '1:0' : 'Fifteen Love',
+    '0:1' : 'Love Fifteen',
     '1:1' : 'Fifteen All'
   };
 
