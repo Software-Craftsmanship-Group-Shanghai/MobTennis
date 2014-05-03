@@ -3,15 +3,16 @@ var Match = function() {
   this.player2score = 0;
 
   var scoreMap = {
-    '0:0' : 'Love All',
-    '1:0' : 'Fifteen Love',
-    '0:1' : 'Love Fifteen',
-    '1:1' : 'Fifteen All'
+    '0' : 'Love',
+    '1' : 'Fifteen'
   };
 
   this.currentScore = function() {
-    var key = this.player1score + ':' + this.player2score;
-    return scoreMap[key];
+    if(this.player1score === this.player2score) {
+        return scoreMap[this.player1score] + ' All';
+    }
+
+    return scoreMap[this.player1score] + ' ' + scoreMap[this.player2score];
   }
 
   this.addPlayer1Score = function() {
