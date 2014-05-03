@@ -42,5 +42,14 @@ describe('mob-tennis', function() {
         setScore(3, 3);
         assert.equal('DEUCE', m.currentScore());
     });
+    it('should display DEUCE when 4X : 4X', function () {
+        setScore(4, 4);
+        assert.equal('DEUCE', m.currentScore());
+    });
     
+    it('should display Joseph Adv when 40+1 : 40', function () {
+        setScore(3, 3);
+        m.addPlayer1Score();
+        assert.equal('Joseph Adv', m.currentScore());
+    });
 })
