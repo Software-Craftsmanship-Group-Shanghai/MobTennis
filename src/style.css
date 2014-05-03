@@ -4,3 +4,17 @@ body {
 #score {
   text-align: center;
 }
+.buttons {
+  text-align: center;
+}
+.score-btn {
+  font-size: 18px;
+  padding: 5px 10px;
+  background-color: #66ccff;
+  color: white;
+  border: none;
+}
+.score-btn:hover {
+  background-color: #29b4fa;
+  cursor: pointer;
+}
