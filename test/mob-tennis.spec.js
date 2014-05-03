@@ -38,4 +38,9 @@ describe('mob-tennis', function() {
         setScore(3, 2);
         assert.equal('Forty Thirty', m.currentScore());
     });
+    it('should display DEUCE when 40 : 40', function () {
+        setScore(3, 3);
+        assert.equal('DEUCE', m.currentScore());
+    });
+    
 })

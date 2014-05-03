@@ -11,6 +11,9 @@ var Match = function() {
 
   this.currentScore = function() {
     if(this.player1score === this.player2score) {
+        if (this.player1score === 3) {
+          return 'DEUCE';
+        }         
         return scoreMap[this.player1score] + ' All';
     }
 
