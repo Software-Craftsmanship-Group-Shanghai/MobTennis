@@ -13,9 +13,10 @@
     <script type="text/javascript" src="mob-tennis.js"></script>
 <script >
     var m = new Match();
+    var scoreBoard = document.getElementById('score');
     document.getElementById('joseph').onclick=function(){
         m.addPlayer1Score();
-        document.getElementById('score').innerHTML = m.currentScore();
+        scoreBoard.innerHTML = m.currentScore();
     };
 
 </script>
