@@ -8,7 +8,7 @@ exports.Match = function() {
     return 'Love All';
   }
 
-  this.player1Score = function() {
+  this.addPlayer1Score = function() {
     this.player1score++;
   }
 }

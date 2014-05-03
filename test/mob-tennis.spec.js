@@ -8,7 +8,9 @@ describe('mob-tennis', function() {
 
     it('should display Fifteen Love when 15 : 0', function () {
         var m = new Match();
-        m.player1Score();
+        m.addPlayer1Score();
         assert.equal('Fifteen Love', m.currentScore());
     })
+
+
 })
