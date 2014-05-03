@@ -14,7 +14,8 @@
 <script >
     var m = new Match();
     document.getElementById('joseph').onclick=function(){
-        
+        m.addPlayer1Score();
+        document.getElementById('score').innerHTML = m.currentScore();
     };
 
 </script>
