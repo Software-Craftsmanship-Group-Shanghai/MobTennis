@@ -15,7 +15,9 @@ describe('mob-tennis', function() {
         assert.equal('Fifteen Love', m.currentScore());
     });
     it('should display Fifteen All when 15 : 15', function() {
-        
+        m.addPlayer2Score();
+        m.addPlayer1Score();
+        assert.equal('Fifteen All', m.currentScore());
     })
 
 

@@ -13,12 +13,12 @@
     <script type="text/javascript" src="mob-tennis.js"></script>
 <script >
     var m = new Match();
+    var joseph =document.getElementById('joseph');
     var scoreBoard = document.getElementById('score');
-    document.getElementById('joseph').onclick=function(){
+    joseph.onclick=function(){
         m.addPlayer1Score();
         scoreBoard.innerHTML = m.currentScore();
     };
-
 </script>
 </body>
 </html>
